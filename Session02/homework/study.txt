@@ -1,0 +1,26 @@
+Boolean :
+   - there are two Boolean values are True and False
+   - A boolean expression is an expression that evaluates to product a result which is a Boolean value.
+i.e : 10 == (3 + 7)
+     True
+      
+      10 == 6
+     False
+      
+      Thisyear = 2017
+      
+      Nextyear = 2018 > 2017
+
+      print(nextyear)
+     True
+
+Nested conditionals are the conditions that can also be nested within another
+ ie: if..elif...else
+ 
+ ie: 
+if A > B :
+	print("A is greater than B")
+elif A < B:
+	print("B is greater than A")
+else :
+	print("A is equal to B")
