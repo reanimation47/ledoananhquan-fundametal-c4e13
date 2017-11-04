@@ -10,8 +10,3 @@ menu =[characters]
 
 if word in menu :
     menu.remove(word)
-    
-
-
-
-print(menu)
