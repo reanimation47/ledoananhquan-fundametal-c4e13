@@ -1,0 +1,8 @@
+item1 = "Banh gio"
+item2 = "pizza"
+item3 = "xoi"
+item4 = "cha"
+item5 = "bun cha"
+item6 = "Khong an gi"
+item7 = "ga nuong mat ong"
+item8 = "an gi cung duoc"
