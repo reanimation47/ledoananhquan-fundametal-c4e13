@@ -1,0 +1,29 @@
+1.We use functions because:
+- It reduces "human errors"
+- It has better possibilities of updating
+- ..
+
+2. How to define a function:
+
+def func_name(func_arguments):
+    statements
+
+3.How to call a function:
+just code it down whenever we need :
+
+func_name(func_arguments)
+
+4.
+-'return' is used to avoid things (valuables, lists, strings,..etc) from being deleted when the function ends
+-we use it when we need to use something inside the function
+-We use it by coding "return x" at the end of the function, where "x" is what we need to use it later
+
+5.No we dont.
+6.Function arguments are the "updatable things" inside the function that we could change it whenever we use the function
+-We use it for its "Possibilities of updating"
+-like question 3
+
+7. simply code :
+from filename.py import func_name
+
+where "filename.py" is the name of the file which has the function in it,
