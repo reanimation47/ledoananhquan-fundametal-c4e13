@@ -1,0 +1,15 @@
+.horizon{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.horizon li{
+    display:inline;
+}
+.horizon a{
+    display:inline-block;
+    padding:10px;
+}

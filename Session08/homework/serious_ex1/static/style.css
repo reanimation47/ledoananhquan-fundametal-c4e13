@@ -1,0 +1,12 @@
+blockquote {
+  background: #a8d4ad;
+  border-left: 10px solid #005d2e;
+  margin: 15em 200px;
+  padding: 0.5em 200px;
+
+}
+
+}
+blockquote p {
+  display: inline;
+}
