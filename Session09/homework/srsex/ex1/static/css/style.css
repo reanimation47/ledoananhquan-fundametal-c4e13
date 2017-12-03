@@ -1,0 +1,49 @@
+secondaryhtml,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+}
+
+.item:nth-child(1) {
+    background: #ff3322;
+}
+
+.item:nth-child(2) {
+    background: #44c7f4;
+}
+
+.item:nth-child(3) {
+    background: #6e2585;
+}
+
+.item:nth-child(4) {
+    background: #ffcd00;
+}
+
+/* Changes position of caption */
+.carousel-caption {
+    top: 40%;
+    bottom: auto;
+    left: 15%;
+    right: auto;
+}
+
+.btn-secondary-text {
+  color: #bd362f;
+}
+
+.btn-secondary-text:hover,
+.btn-secondary-text:active,
+.btn-secondary-text.active,
+.btn-secondary-text.disabled,
+.btn-secondary-text[disabled] {
+  color: #bd362f;
+  *color: #a9302a;
+}
+
+.btn-secondary-text:active,
+.btn-danger-text.active {
+  color: #942a25 \9;
+}
