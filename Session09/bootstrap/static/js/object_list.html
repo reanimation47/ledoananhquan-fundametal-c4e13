@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% for item in items %}
+      <div class="">
+        <h4>{{ item.title }}</h4>
+        <img src="{{ item.image }}" alt="">
+        <p>{{ item.description }}</p>
+      </div>
+    {% endfor %}
+  </body>
+</html>

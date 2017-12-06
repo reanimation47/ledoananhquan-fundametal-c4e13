@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+  </head>
+  <body>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Họp phụ huynh hộ,<strong> giữ hạnh phúc gia đình !</strong></a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Hướng dẫn</a></li>
+      <li><a href="#">Đăng nhập để bắt đầu!</a></li>
+
+    </ul>
+  </div>
+<div class="container">
+  <h2></h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+
+    {% for item in items %}
+
+    <div class="item active">
+      <img src="{{ item.image }}" alt="x" style="width:100%;">
+      <div class="carousel-caption">
+        <h2 class="text-primary">{{ item.title }}</h2>
+        <p class="text-white">{{ item.des1 }}</p>
+        <button type="button" class="btn btn-outline-primary " name="button">{{ item.price1 }}đ</button>
+        <br>
+        <p class="text-white">{{ item.des2 }}</p>
+        <button type="button" class="btn btn-outline-primary" name="button">{{ item.price2 }}đ</button>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </div>
+</div>
+  </nav>
+<h2>Hãy cùng chúng tôi gìn giữ hạnh phúc gia đình !</h2>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">Bạn là xe ôm, grab?</h3>
+          <p class="card-text">Liên hệ để biết thêm chi tiết.</p>
+          <a href="#" class="btn btn-primary">Liên hệ</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">Bạn là sinh viên?</h3>
+          <p class="card-text">Yêu cầu ngoại hình dễ nhìn, có khả năng ứng xử tốt.</p>
+          <a href="#" class="btn btn-primary">Liên hệ</a>
+        </div>
+      </div>
+    </div
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">Bạn là người trưởng thành?</h3>
+          <p class="card-text">Yêu cầu đã có gia đình, thường xuyên đi họp phụ huynh cho con.</p>
+          <a href="#" class="btn btn-primary">Liên hệ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-inverse card-danger text-center">
+    <div class="card-block">
+      <blockquote class="card-blockquote">
+        <p>Nếu bạn đang phân vân </p>
+        <footer>Bạn nên biết họp phụ huynh hộ là <cite title="Source Title">Hợp Pháp</cite></footer>
+      </blockquote>
+    </div>
+  </div>
+
+
+  </body>
+</html>
