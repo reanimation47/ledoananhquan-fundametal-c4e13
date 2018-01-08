@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Đi đâu </title>
+    <script type="text/javascript" src="../static/js/jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript" src="../static/js/popper.js">
+
+    </script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js">
+
+    </script>
+    <script src="https://use.fontawesome.com/dfc9ca6b14.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+  </head>
+  <body class="body-with-bg">
+    <div class="">
+      <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand">Đi Đâu Bây Giờ ????</a>
+        <form class="form-inline" method="post">
+          <input class="form-control mr-sm-2" type="text" name="username" value="" placeholder="Tài Khoản">
+          <input class="form-control mr-sm-2" type="password" name="password" value="" placeholder="Mật Khẩu">
+          <button class="btn btn-outline-success" type="submit" name="button">Đăng nhập</button>
+        </form>
+      </nav>
+      <div class="container block " >
+        <div class="row">
+          <form class="form-inline ">
+              <input class="form-control mr-sm-2 search-box" type="search" placeholder="Search" aria-label="Search">
+              <!-- <button class="btn btn-outline-success my-2 my-sm-0 search-button" type="submit">Search</button> -->
+          </form>
+
+        </div>
+        <!-- <div class="row">
+          <button type="btn btn-ouline-dark" type="submit" style="margin-top: 80px">Them Ban Di</button>
+        </div> -->
+        <div class="row" style="margin-top: 30px">
+          <!-- <ul>
+            <li>Sau nay thay bang vong lap</li>
+          </ul> -->
+          <form class=""  method="post">
+            <div class="row form-group"  id="nguoi1" >
+              <label class="text-white" for="nguoi1">Nguoi 1</label>
+              <div class="col">
+                <input style="padding-right: 150px" type="text" class="form-control" placeholder="Dia chi" name="location1">
+              </div>
+            </div>
+            <div class="row form-group" id="nguoi2" >
+              <label class="text-white" for="nguoi2">Nguoi 2</label>
+              <div class="col">
+                <input style="padding-right: 150px" type="text" class="form-control" placeholder="Dia chi" name=location2>
+              </div>
+            </div>
+            <div class="row form-group" id="nguoi3">
+              <label class="text-white" for="nguoi3">Nguoi 3</label>
+              <div class="col">
+                <input style="padding-right: 150px" type="text" class="form-control" placeholder="Dia chi" name=location3>
+              </div>
+            </div>
+            <button type="submit" name="button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    {% for latlng in latlngs %}
+      <p>{{latlng}}</p>
+    {% endfor %}
+  </body>
+</html>

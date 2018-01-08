@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kết quả tìm kiếm</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map, infoWindow;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 21.028511, lng: 105.804817},
+          zoom: 12
+        });
+        infoWindow = new google.maps.InfoWindow;
+
+        var pos = {
+          lat: {{lat}},
+          lng: {{lng}}
+        };
+        infoWindow.setPosition(pos);
+        infoWindow.setContent('Tâm của khu vực thích hợp');
+        infoWindow.open(map);
+        map.setCenter(pos);
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVu3d_FHZGs_4iUOMyrKGROPX5OhQD_Tw&callback=initMap">
+    </script>
+  </body>
+</html>

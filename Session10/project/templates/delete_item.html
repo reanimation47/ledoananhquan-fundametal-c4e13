@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block page_content %}
+<form class=""method="post">
+  <div class="card text-center">
+    <div class="card-header">
+      <p> Warning! </p>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title text-danger">Deleting Confirmation</h4>
+      <p class="card-text">Are you sure you wanna remove this item?</p>
+      <input type="submit" name="" value="Yes,remove it." class="btn btn-primary">
+    </div>
+    <div class="card-footer text-muted">
+      This action can NOT be undone
+    </div>
+  </div>
+</form>
+
+
+
+
+
+
+
+{% endblock %}

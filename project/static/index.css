@@ -1,0 +1,28 @@
+.item-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.logo {
+  font-family: Lobster;
+  font-size: 2em;
+}
+
+.bg-dark {
+  background-color: #774B1C !important;
+}
+
+.footer {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}

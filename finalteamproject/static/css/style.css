@@ -1,0 +1,46 @@
+body, html{
+  height: 100%:
+}
+.block{
+    margin: auto;
+    width: fit-content;
+    padding-top: 180px;
+}
+.search-box{
+  padding-right: 200px;
+}
+.search-button{
+  margin-left: 200px !important;
+}
+.result-button{
+  display: flex;
+  margin: 0 auto;
+
+
+}
+.body-with-bg{
+  background: url("../images/homepage.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.username{
+  padding-right: 100px;
+  margin-right: 10px;
+}
+.password{
+  margin-right: 10px;
+
+}
+.person-bar{
+  width: 75% !important;
+}
+.map{
+  width: 450px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

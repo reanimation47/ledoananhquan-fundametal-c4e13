@@ -1,0 +1,13 @@
+# Server & APIs
+flask
+flask-restful
+
+# Database
+mongoengine
+
+# For deployment
+gunicorn
+eventlet
+
+# Others
+geopy

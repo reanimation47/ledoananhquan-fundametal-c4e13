@@ -1,0 +1,6 @@
+# files for git to ignore
+.DS_STORE
+*.sublime-project
+*.sublime-workspace
+*.idea
+*__pycache__

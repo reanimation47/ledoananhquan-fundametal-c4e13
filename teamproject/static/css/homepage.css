@@ -1,0 +1,8 @@
+body {
+  background-image: url('../images/homepage.jpg');
+  background-size: cover
+}
+
+.navbar-brand {
+  color: white;
+}

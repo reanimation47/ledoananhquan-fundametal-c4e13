@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyCZ6Xf879FlLldO8hGRc16EggEHaVXcxRQ&libraries=places" async defer></script>
+  </head>
+  <body class="body-with-bg">
+    <input id="1" class="mapTypeField" type="text" size="50"><br>
+    <input id="2" class="mapTypeField" type="text" size="50"><br>
+    <input id="3" class="mapTypeField" type="text" size="50"><br>
+    <input id="4" class="mapTypeField" type="text" size="50"><br>
+    <script type="text/javascript">
+    var input = document.getElementsByClassName('mapTypeField');
+    for (i = 0; i < input.length; i++) {
+      autocomplete = new google.maps.places.Autocomplete(input[i]);
+    }
+    </script>
+   </body>
+</html>

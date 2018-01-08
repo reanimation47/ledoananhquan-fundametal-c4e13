@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block page_content %}
+
+<!-- <form class="" method="post">
+  <input type="text" name="username" placeholder="Username" value="">
+  <input type="password" name="password" placeholder="Password" value="">
+  <input type="Submit" value="Login">
+</form> -->
+
+<form method='post'>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Username</label>
+    <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+    <small id="emailHelp" class="form-text text-muted">Enter Username.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Remember me
+    </label>
+  </div>
+  <input type="Submit" class="btn btn-primary"  value="Login">
+</form>
+
+{% endblock %}
